@@ -17,11 +17,11 @@ module.exports = {
     host: process.env.DB_HOST,
     port: process.env.DB_PORT,
     dialect: process.env.DB_DIALECT,
-    ialectOptions: {
+    dialectOptions: {
       ssl: {
-          require: true,
-          rejectUnauthorized: false,
-        },
-  }
+        require: true,
+        rejectUnauthorized: false,
+      },
+    },
   },
 };
