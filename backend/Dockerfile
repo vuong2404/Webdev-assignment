@@ -12,8 +12,8 @@ RUN npm run build
 
 ENV NODE_ENV=production
 
-RUN npm install -g sequelize-cli
-RUN npx sequelize-cli db:migrate --env production
-RUN npx sequelize-cli db:seed:all --env production
+# RUN npm install -g sequelize-cli
+# RUN npx sequelize-cli db:migrate --env production
+# RUN npx sequelize-cli db:seed:all --env production
 
 CMD ["npm", "run", "start:prod"]
