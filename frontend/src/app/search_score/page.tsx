@@ -29,12 +29,13 @@ export default function Home() {
       setNotFoundMsg(false)
     }
 
-    let sbd = form.getFieldValue("sbd");
+    const sbd = form.getFieldValue("sbd");
 
     try {
       const response = await AppApiRequest.getScores(sbd);
       setScores(response.data);
     } catch (error) {
+      console.log(error)
       setNotFoundMsg(true)
     }
   };
