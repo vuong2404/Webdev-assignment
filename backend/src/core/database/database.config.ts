@@ -31,6 +31,7 @@ export const databaseConfig: IDatabaseConfig = {
                 require: true,
                 rejectUnauthorized: false,
               },
-        }
+        }, 
+        ssl: true
     },
 };

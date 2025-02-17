@@ -23,5 +23,6 @@ module.exports = {
         rejectUnauthorized: false,
       },
     },
+    ssl: true
   },
 };

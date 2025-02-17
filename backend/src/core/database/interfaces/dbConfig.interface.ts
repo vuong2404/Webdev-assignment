@@ -7,6 +7,7 @@ export interface IDatabaseConfigAttributes {
     dialect?: string;
     urlDatabase?: string;
     dialectOptions?: any
+    ssl?: boolean
 }
 
 
